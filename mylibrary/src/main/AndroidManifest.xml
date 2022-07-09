@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mylibrary">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application>
+        <activity
+            android:name=".mypaging3.Mypaging3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".mynavigation.navigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".room.myroomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".test.testActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mydatabinding.mydatabindingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".myActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

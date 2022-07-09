@@ -1,0 +1,37 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven {
+            allowInsecureProtocol = true
+            url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+        maven {  allowInsecureProtocol = true
+            url 'https://maven.aliyun.com/repository/google' }
+        maven {  allowInsecureProtocol = true
+            url 'https://maven.aliyun.com/repository/jcenter' }
+        jcenter()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            allowInsecureProtocol = true
+            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+        }
+        maven {  allowInsecureProtocol = true
+            url 'https://maven.aliyun.com/repository/google' }
+        maven {  allowInsecureProtocol = true
+            url 'https://maven.aliyun.com/repository/jcenter' }
+        jcenter()
+    }
+}
+include ':myWebView'
+include ':common'
+include ':base'
+include ':app'
+rootProject.name = "Mykotlin"
+include ':mylibrary'

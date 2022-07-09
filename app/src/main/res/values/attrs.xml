@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="myview06">
+        <attr name="text006size" format="dimension"></attr>
+        <attr name="text006color" format="color"></attr>
+        <attr name="stroke006Width" format="dimension"></attr>
+        <attr name="text006" format="string"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="Myview91">
+        <attr name="isoval" format="boolean"></attr>
+
+    </declare-styleable>
+</resources>
