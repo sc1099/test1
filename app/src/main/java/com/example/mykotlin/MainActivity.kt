@@ -131,12 +131,12 @@ class MainActivity : baseActivity() {
         var cor =  MainScope()
 
         val job = Job()
-      
+
         val scope  = CoroutineScope(job)
         scope.launch(Dispatchers.IO){
             Log.d(TAG, "onCreate: 测试协程1     "+Thread.currentThread().name)
             msleep()
-            Log.d(TAG, "onCreate: 测试协程2    ")
+            Log.d(TAG, "onCreate: 测试协程2    "+Thread.currentThread().name)
         }
         Thread.sleep(1000)
         Log.d(TAG, "onCreate: 测试协程3         "+Thread.currentThread().name)
@@ -146,7 +146,7 @@ class MainActivity : baseActivity() {
 //todo  suspend不是实现挂起的作用。只是用来提醒，真正实现挂起的是suspend修饰的函数中的代码。
 suspend fun msleep(){
         withContext(Dispatchers.IO){   //withContext会将外部协程挂起
-//            delay(10000)
+            delay(3000)
             Log.d(TAG, "msleep: 我在协程中sleep 3秒          "+Thread.currentThread().name)
         }
 
