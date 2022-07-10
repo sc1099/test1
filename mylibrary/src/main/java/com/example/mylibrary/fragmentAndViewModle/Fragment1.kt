@@ -105,8 +105,9 @@ class Fragment1 : Fragment() {
             }
         }
         Log.d(TAG, "test2: 结束"+Thread.currentThread().name)
-        Log.d(TAG, "myversion1.0"+Thread.currentThread().name)
-
+        Log.d(TAG, "这是master主线"+Thread.currentThread().name)
+        Log.d(TAG, "这是master主线"+Thread.currentThread().name)
+        Log.d(TAG, "这是master主线"+Thread.currentThread().name)
     }
 
 }
