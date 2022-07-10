@@ -104,7 +104,12 @@ class Fragment1 : Fragment() {
                 Log.d(TAG, channel.receive())
             }
         }
-
+        Log.d(TAG, "test2: 结束"+Thread.currentThread().name)
+        Log.d(TAG, "test2: 结束"+Thread.currentThread().name)
+        Log.d(TAG, "test2: 结束"+Thread.currentThread().name)
+        Log.d(TAG, "test2: 结束"+Thread.currentThread().name)
+        Log.d(TAG, "test2: 结束"+Thread.currentThread().name)
+        Log.d(TAG, "test2: 结束"+Thread.currentThread().name)
         Log.d(TAG, "test2: 结束"+Thread.currentThread().name)
     }
 
